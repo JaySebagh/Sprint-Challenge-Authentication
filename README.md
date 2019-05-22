@@ -1,5 +1,5 @@
 # Sprint Challenge: Authentication - Dad Jokes
-
+  
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored Authentication. During this Sprint, you studied Introduction to Authentication, Using Sessions and Cookies, Using JSON Web Tokens (JWT), and Client-side Authentication. In your challenge this week, you will demonstrate proficiency by creating an application that will give you a list of random dad jokes, as long as you are authorized.
 
 - **DISCLAIMER** Authentication is a subject that many people spend a large amount time throughout their careers obtaining knowledge over. This is not something we expect you to have a mastery over, rather, we're preparing you to be able have an intelligent conversation about the subject.
@@ -28,10 +28,31 @@ Implement an User Authentication System in order to access the jokes from the Jo
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-1. What is the purpose of using _sessions_?
-1. What does bcrypt do to help us store passwords in a secure manner.
-1. What does bcrypt do to slow down attackers?
-1. What are the three parts of the JSON Web Token?
+What is the purpose of using sessions?
+
+Sessions allow you to store data to check for things like if the user is logged in so they don't have to relog each time they change pages.
+
+
+
+
+What does bcrypt do to help us store passwords in a secure manner.
+
+Bcrypt encrypts the user's password making it difficult for hackers to steal information. Once encrypted, the password is never decrypted. Instead, Bcrypt converts login passwords as encrypted passwords and checks them against the database.
+
+
+
+What does bcrypt do to slow down attackers?
+
+Bcrypt encrypts passwords to slow down attackers.
+
+
+
+
+What are the three parts of the JSON Web Token?
+
+- Header (type of token (JWT) and signing algorithm (HMAC/SHA256/RSA ect)
+- Payload (statements about the user such as "name": "Jay" which becomes encoded in Base64URL)
+- Signature (verify the message wasn't tampered with)
 
 ## Project Set Up
 
